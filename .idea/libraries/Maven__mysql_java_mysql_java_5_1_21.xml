@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: mysql-java:mysql-java:5.1.21">
+    <CLASSES>
+      <root url="jar://F:/Program Files/apache-maven-3.6.1/mvn_resp/mysql-java/mysql-java/5.1.21/mysql-java-5.1.21.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://F:/Program Files/apache-maven-3.6.1/mvn_resp/mysql-java/mysql-java/5.1.21/mysql-java-5.1.21-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://F:/Program Files/apache-maven-3.6.1/mvn_resp/mysql-java/mysql-java/5.1.21/mysql-java-5.1.21-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

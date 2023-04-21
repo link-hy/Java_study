@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/10maven/10maven.iml" filepath="$PROJECT_DIR$/10maven/10maven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11maven/11maven.iml" filepath="$PROJECT_DIR$/11maven/11maven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/12mybatis/12mybatis.iml" filepath="$PROJECT_DIR$/12mybatis/12mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/15Html/15Html.iml" filepath="$PROJECT_DIR$/15Html/15Html.iml" />
+      <module fileurl="file://$PROJECT_DIR$/16Webapp1/16Webapp1.iml" filepath="$PROJECT_DIR$/16Webapp1/16Webapp1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/18Webapp1/18Webapp1.iml" filepath="$PROJECT_DIR$/18Webapp1/18Webapp1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/19Webapp2/19Webapp2.iml" filepath="$PROJECT_DIR$/19Webapp2/19Webapp2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/31spring_BeanInstance/31spring_BeanInstance.iml" filepath="$PROJECT_DIR$/31spring_BeanInstance/31spring_BeanInstance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/34Spring_DI_jihe/34Spring_DI_jihe.iml" filepath="$PROJECT_DIR$/34Spring_DI_jihe/34Spring_DI_jihe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java.iml" filepath="$PROJECT_DIR$/.idea/Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/33SpringDI_set/SpringDI_set.iml" filepath="$PROJECT_DIR$/33SpringDI_set/SpringDI_set.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/code.iml" filepath="$PROJECT_DIR$/code/code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/nowcoder/nowcoder.iml" filepath="$PROJECT_DIR$/code/nowcoder/nowcoder.iml" />
+    </modules>
+  </component>
+</project>

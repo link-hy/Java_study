@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.itcast.cn"
+        elementFormDefault="qualified" >
+    <element name='书架'>
+        <complexType> <!-- 写子元素 -->
+            <sequence maxOccurs='unbounded'>  <!-- 子元素个数 -->
+                <element name='书'>
+                    <complexType>  <!-- 写子元素 -->
+                        <sequence>
+                            <element name='书名' type='string'/>
+                            <element name='作者' type='string'/>
+                            <element name='价格' type='double'/>
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

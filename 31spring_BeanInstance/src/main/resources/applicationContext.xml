@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    1构造方法-->
+<!--    <bean id="bookDao" name="book1" class="Demo1.dao.impl.BookDaoImpl"/>-->
+<!--    2静态工厂-->
+<!--    <bean id="orderDao" name="Order1" class="Demo1.factory.OrderDaoFactory" factory-method="getOrderDao"/>-->
+<!--    3实例工厂-->
+<!--    先造出工厂对象-->
+<!--    <bean id="userFactory" class="Demo1.factory.UserDaoFactory" />-->
+<!--    <bean id="userDao" factory-method="getUserDao" factory-bean="userFactory"/>-->
+<!--    FactoryBean-->
+    <bean id="userDao" class="Demo1.factory.UserDaoFactoryBean"/>
+
+<!--    <bean id="userDao" class="Demo1.factory.UserDaoFactoryBean" init-method="init" destroy-method="destory"/>-->
+</beans>

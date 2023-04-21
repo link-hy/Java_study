@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="34Spring_DI_jihe" />
+        <module name="31spring_BeanInstance" />
+        <module name="11maven" />
+        <module name="18Webapp1" />
+        <module name="12mybatis" />
+        <module name="10maven" />
+        <module name="19Webapp2" />
+        <module name="16Webapp1" />
+        <module name="SpringDI_set" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="10maven" target="17" />
+      <module name="11maven" target="17" />
+      <module name="12mybatis" target="17" />
+      <module name="12mybatis (1)" target="17" />
+      <module name="13mavenTest" target="17" />
+      <module name="14mybatis" target="17" />
+      <module name="16Webapp1" target="1.7" />
+      <module name="17Webapp1" target="1.5" />
+      <module name="18Webapp1" target="1.7" />
+      <module name="19Webapp2" target="1.7" />
+      <module name="30springQuickStart" target="17" />
+      <module name="31spring_BeanInstance" target="17" />
+      <module name="32SpringBeanInstance" target="17" />
+      <module name="33SpringDI_set" target="17" />
+      <module name="34Spring_DI_jihe" target="17" />
+      <module name="SpringDI_set" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

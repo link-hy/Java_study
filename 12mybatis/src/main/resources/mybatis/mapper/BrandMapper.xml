@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis.mapper.BrandMapper">
+
+    <!--在这里写SQL片段，如何就可以在select里面引用，起别名解决类和数据库不一致-->
+    <sql id="brand_cilumn">
+        id,brand_name as brandName,company_name as companyName,ordered,description,status
+    </sql>
+
+
+
+    <!-- resultMap 映射解决不一致问题
+        type 支持别名
+        -->
+    <resultMap id="resultM" type="Brand">
+        <result column="brand_name" property="brandName"/>
+        <result column="company_name" property="companyName"/>
+    </resultMap>
+    
+    <select id="selectAll" resultType="brand">
+        select
+        <include refid="brand_cilumn"></include>
+            from tb_brand;
+    </select>
+
+<!--    特殊字符 >< ，转义字符和CDATA区
+-->
+
+    <select id="selectById" resultType="mybatis.pojp.Brand">
+        select
+        <include refid="brand_cilumn"></include>
+        from tb_brand where id = #{id};
+    </select>
+
+    <!--    <select id="selectById" resultMap="resultM">
+            select *
+            from tb_brand where id = #{id};
+        </select>-->
+
+<!--    条件查询-->
+<!--起别名-->
+<!--    <select id="selectByCondition" resultType="mybatis.pojp.Brand">
+        select <include refid="brand_cilumn"></include>
+        from tb_brand
+        where status = #{status}
+          and company_name like #{companyName}
+          and brand_name like #{brandName}
+    </select>-->
+
+<!--resultmap映射-->
+<!--    <select id="selectByCondition" resultMap="resultM">
+        select *
+        from tb_brand
+        where status = #{status}
+        and company_name like #{companyName}
+        and brand_name like #{brandName}
+    </select>-->
+
+<!--    动态条件查询   if 标签和 where 标签-->
+<!--    <select id="selectByCondition" resultMap="resultM">
+        select *
+        from tb_brand
+        where
+        <if test="status != null">
+            status = #{status}
+        </if>
+        <if test="companyName != null and companyName != '' ">
+            and company_name like #{companyName}
+        </if>
+        <if test="brandName != null and brandName != '' ">
+            and brand_name like #{brandName}
+        </if>
+    </select>-->
+    <!-- if 标签和 where 标签解决逻辑运算符and在首位问题-->
+    <select id="selectByCondition" resultMap="resultM">
+        select *
+        from tb_brand
+        <where>
+        <if test="status != null">
+            status = #{status}
+        </if>
+        <if test="companyName != null and companyName != '' ">
+            and company_name like #{companyName}
+        </if>
+        <if test="brandName != null and brandName != '' ">
+            and brand_name like #{brandName}
+        </if>
+        </where>
+    </select>
+
+
+<!--    单条件查询-->
+    <select id="selectByConditionSingle" resultMap="resultM">
+        select *
+        from tb_brand
+        <where>
+            <choose><!--相当于switch-->
+                <when test="status != null"><!--相当于case-->
+                    status = #{status}
+                </when>
+                <when test="companyName != null and companyName != '' "><!--相当于case-->
+                    company_name like #{companyName}
+                </when>
+                <when test="brandName != null and brandName != ''"><!--相当于case-->
+                    brand_name like #{brandName}
+                </when>
+             <!--   <otherwise>1=1</otherwise>  用where就加上这个处理无内容的情况-->
+            </choose>
+        </where>
+    </select>
+
+
+<!--    插入数据的-->
+    <!--useGeneratedKeys：是够获取自动增长的主键值。true表示获取
+     keyProperty  ：指定将获取到的主键值封装到哪儿个属性里-->
+    <insert id="add" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_brand (brand_name, company_name,
+                              ordered, description, status)
+        values (#{brandName}, #{companyName},
+                #{ordered}, #{description}, #{status});
+    </insert>
+
+
+<!--    动态数据修改-->
+    <update id="update">
+        update tb_brand
+        <set>  /* set* 标签可以用于动态包含需要更新的列，忽略其它不更新的列。*/
+            <if test="brandName != null and brandName != ''">
+                brand_name = #{brandName},
+            </if>
+            <if test="companyName != null and companyName != ''">
+                company_name = #{companyName},
+            </if>
+            <if test="ordered != null">
+                ordered = #{ordered},
+            </if>
+            <if test="description != null and description != ''">
+                description = #{description},
+            </if>
+            <if test="status != null">
+                status = #{status}
+            </if>
+        </set>
+        where id = #{id};
+    </update>
+
+
+<!--    删除-->
+    <delete id="deleteById">
+        delete from tb_brand where id = #{id};
+    </delete>
+<!--    批量删除-->
+    <delete id="deleteByIds">
+        delete from tb_brand where id
+        in
+        <foreach collection="array" item="id" separator="," open="(" close=")">
+            #{id}
+        </foreach>
+        ;
+    </delete>
+</mapper>

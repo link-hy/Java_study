@@ -1,0 +1,14 @@
+2023-03-01 12:41:37.145 [main] DEBUG tese.class - 执行了main .
+2023-03-01 12:41:37.149 [main] INFO  tese.class - 记录日志：
+2023-03-01 12:41:37.157 [main] TRACE tese.class - a=10 ,b=0
+2023-03-01 12:41:37.158 [main] ERROR tese.class - 异常：java.lang.ArithmeticException: / by zero
+2023-03-01 12:43:47.500 [main] DEBUG tese.class - 执行了main .
+2023-03-01 12:43:47.504 [main] INFO  tese.class - 记录日志：
+2023-03-01 12:43:47.509 [main] TRACE tese.class - a=10 ,b=0
+2023-03-01 12:43:47.512 [main] ERROR tese.class - 异常：java.lang.ArithmeticException: / by zero
+2023-03-01 12:50:51.246 [main] DEBUG tese.class - 执行了main .
+2023-03-01 12:50:51.254 [main] INFO  tese.class - 记录日志：
+2023-03-01 12:50:51.259 [main] TRACE tese.class - a=10 ,b=0
+2023-03-01 12:50:51.264 [main] ERROR tese.class - 异常：java.lang.ArithmeticException: / by zero
+2023-03-01 13:00:17.491 [main] INFO  tese.class - 记录日志：
+2023-03-01 13:00:17.513 [main] ERROR tese.class - 异常：java.lang.ArithmeticException: / by zero

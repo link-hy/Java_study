@@ -1,0 +1,10 @@
+# Project exclude paths
+/10maven/target/
+/12mybatis/target/
+/16Webapp1/target/
+/18Webapp1/target/
+/19Webapp2/target/
+/31spring_BeanInstance/target/
+/33SpringDI_set/target/
+/34Spring_DI_jihe/target/
+/out/

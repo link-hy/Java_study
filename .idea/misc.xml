@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/16Webapp1" />
+    <file type="web" url="file://$PROJECT_DIR$/17Webapp1" />
+    <file type="web" url="file://$PROJECT_DIR$/18Webapp1" />
+    <file type="web" url="file://$PROJECT_DIR$/19Webapp2" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/10maven/pom.xml" />
+        <option value="$PROJECT_DIR$/11maven/pom.xml" />
+        <option value="$PROJECT_DIR$/12mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/16Webapp1/pom.xml" />
+        <option value="$PROJECT_DIR$/18Webapp1/pom.xml" />
+        <option value="$PROJECT_DIR$/19Webapp2/pom.xml" />
+        <option value="$PROJECT_DIR$/31spring_BeanInstance/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringDI_set/pom.xml" />
+        <option value="$PROJECT_DIR$/33SpringDI_set/pom.xml" />
+        <option value="$PROJECT_DIR$/34Spring_DI_jihe/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
